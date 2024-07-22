@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is my registration page">
+    <meta name="author" content="Ekeh Kingsley Somtochukwu">
+    <link rel="icon" href="../pictures/png/logo-black.png" type="image/x-icon">
+
+
+
+    <title>Sign Up To SMTVERSE</title>
+</head>
+<body>
+    <div class="form-container">
+        <header>
+            <h1>SMTVERSE Registration Form</h1>
+            <p>Please fill in the following details:</p>
+        </header>
+
+        <form action="smtiverse2.html" method="post">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            
+            <div>
+                <label>Password:</label>
+                <input type="password" id="password" name="password" required>
+            
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number">
+            </div><br>
+            <div>
+                <label>Age:</label>
+                <input type="age" id="age" name="age">
+            
+                <label for="date of birth">Date Of Birth</label>
+                <input type="date" id="date of birth" name="date of birth"><br><br>
+            </div><br>
+            
+            <div>
+                <label>enter time </label><br>
+                <input type="time" id="time" name="time">
+            </div>
+            <div>
+                <label>select color</label><br>
+                <input type="color" id="color" name="color">
+            </div>
+            <div>
+                <label>sex type</label><br>
+                <input type="radio" id="male" name="sex" value="male"><label for="male">male</label><br>
+                <input type="radio" id="female" name="sex" value="female"><label for="female">female</label><br>
+                <input type="radio" id="others" name="sex" value="others"><label for="others">others</label>
+            </div>
+            <div>
+                <label>marital status</label><br>
+                <input type="checkbox" id="single" name="phone" value="single"><label for="single">single</label><br>
+                <input type="checkbox" id="female" name="sex" value="female"><label for="female">married</label><br>
+                <input type="checkbox" id="others" name="sex" value="others"><label for="others">others</label>
+            </div>
+           
+            <div>
+                <label for="experience">experience</label><br>
+                <span>range from (0-100)</span><br>
+                <input type="range" id="experience" name="experience" min="0" max="100" value="0" oninput="this.nextElementSibling.value=this.value">
+                <output>0</output>
+            </div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+           <a href="smtiverse2.html"><button type="submit">Submit</button></a>
+        </form>
+    </div>
+</body>
+</html>
